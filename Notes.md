@@ -47,4 +47,18 @@ Here we discuss the different aspects of the production server setup in nodejs.
 - Use `npm i husky lint-staged -D` to install dependencies.
 - Run `npx husky init` to start husky and it will create a `.husky` folder.
 - Inside that folder, we have a `pre-commit` file with all the commands which will run before commits.
+- This precommit hook allows us to run commands before every commits.
 - For now we will add a test command to simulate dummy tests.
+
+## Typescript Setup
+- For large scale projects, we require type checking which is missing in javascript.
+- But typescript will detect these runtime errors before they appear and bugs are significantly reduced.
+- Open the terminal and follow these steps.
+- Run `npm i typescript -D` to install typescript.
+- Then run `npx tsc --init` and typescript compiler will create a tsconfig for us.
+- Then enable required configurations in the tsconfig file. And create a source directory for out code.
+- Install nodejs Types using `npm i -D @types/node` and install nodemon for development using `npm i -D nodemon`
+- Update the `package.json` config to setup nodemon. 
+- Make sure to install ts-node for nodemon to run ts files `npm i -D ts-node`
+- Add a `dist` command to build ts files into js files.
+- By this point, we will have scripts for development and production scenarios.

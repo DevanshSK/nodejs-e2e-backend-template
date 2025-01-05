@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js",
+    "dist": "npx tsc",
+    "test": "echo 'Everything is fine'",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
     "prepare": "husky"
   },
   "author": "DevanshSK",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.10.5",
     "husky": "^9.1.7",
-    "lint-staged": "^15.3.0"
+    "lint-staged": "^15.3.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
