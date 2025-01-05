@@ -62,3 +62,7 @@ Here we discuss the different aspects of the production server setup in nodejs.
 - Make sure to install ts-node for nodemon to run ts files `npm i -D ts-node`
 - Add a `dist` command to build ts files into js files.
 - By this point, we will have scripts for development and production scenarios.
+
+## Folder Structure
+- This backend server will be based on MVC architecture and has a lot of files.
+- So, we need a proper folder structure that handles all different types of files.
