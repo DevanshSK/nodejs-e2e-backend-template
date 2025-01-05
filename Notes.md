@@ -66,3 +66,12 @@ Here we discuss the different aspects of the production server setup in nodejs.
 ## Folder Structure
 - This backend server will be based on MVC architecture and has a lot of files.
 - So, we need a proper folder structure that handles all different types of files.
+- These folders will allow proper development experience and also contain diffenent configurations for our project.
+
+
+## Commit Lint
+- This is a utility which allows us to check if our commit messages are well structured or not.
+- This tool is setup with prettier and eslint for maintaining code quality.
+- To use this, we need husky and 2 more packages.
+- Run `npm i @commitlint/cli @commitlint/config-conventional -D`
+- Create `commit-msg` file inside husky
