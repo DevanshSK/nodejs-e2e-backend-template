@@ -38,3 +38,5 @@ Here we discuss the different aspects of the production server setup in nodejs.
 - Make sure that git is installed.
 - Create a git repository using `git init`
 - Commit the files using commands `git add .` and `git commit -m "feat: Node Project Setup"`
+- Create a new repository on github website
+- Add remote origin to the repository.
